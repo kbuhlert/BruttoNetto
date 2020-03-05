@@ -5,9 +5,14 @@ public class BruttoNetto {
         double bruttoPreis;
         bruttoPreis = nettopreis + nettopreis * steuersatz;
         System.out.println("Ergebnis: " + bruttoPreis + "€");
-        float steuerMax = 0.1f;
+        double steuerMax = 0.1;
         boolean steuerMaxTest;
-        steuerMaxTest = steuersatz < steuerMax;
-        System.out.println("Der Steuersatz übertrifft nicht das Max: " + steuerMaxTest);
+        steuerMaxTest = steuersatz > steuerMax;
+        System.out.println("Der Steuersatz übertrifft das Max: " + steuerMaxTest);
+
+        if (steuerMaxTest = true){
+            System.out.println("Achtung, der maximale Steuersatz ist überschritten");
+        } else {
+            System.out.println("Der gewählte Steuersatz ist korrekt");}
     }
 }
